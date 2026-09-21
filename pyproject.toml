@@ -49,10 +49,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Karthikkamsala/SCABM"
-Documentation = "https://github.com/Karthikkamsala/SCABM#readme"
-Repository = "https://github.com/Karthikkamsala/SCABM"
-Issues = "https://github.com/Karthikkamsala/SCABM/issues"
+Homepage = "https://github.com/Karthikkamsala/SC-ABM"
+Documentation = "https://github.com/Karthikkamsala/SC-ABM#readme"
+Repository = "https://github.com/Karthikkamsala/SC-ABM"
+Issues = "https://github.com/Karthikkamsala/SC-ABM/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/supplychain_abm"]

@@ -1,5 +1,7 @@
 # supplychain-abm
 
+[![CI](https://github.com/Karthikkamsala/SC-ABM/actions/workflows/ci.yml/badge.svg)](https://github.com/Karthikkamsala/SC-ABM/actions/workflows/ci.yml)
+
 > A virtual laboratory for experimenting with supply-chain decisions, disruptions, and policies.
 
 **supplychain-abm** is an open-source Python framework for agent-based simulation of supply chains. Built on [Mesa](https://mesa.readthedocs.io/) and [NetworkX](https://networkx.org/), it lets you create virtual supply chains with autonomous agents, run simulations, and measure performance.
@@ -19,17 +21,21 @@
 
 ## Installation
 
+The project is currently installed directly from GitHub:
+
 ```bash
-pip install supplychain-abm
+pip install git+https://github.com/Karthikkamsala/SC-ABM.git
 ```
 
 For development:
 
 ```bash
-git clone https://github.com/Karthikkamsala/SCABM.git
-cd supplychain-abm
+git clone https://github.com/Karthikkamsala/SC-ABM.git
+cd SC-ABM
 pip install -e ".[dev]"
 ```
+
+The package is not currently published on PyPI.
 
 ## Quick Start
 
@@ -61,6 +67,25 @@ results = model.results()
 print(results)
 ```
 
+The basic example prints a reproducible summary like this:
+
+```text
+total_demand: 300.00
+total_fulfilled: 300.00
+overall_service_level: 1.00
+total_stockouts: 0.00
+avg_inventory: 445.83
+```
+
+It also plots warehouse inventory over time with `model.plot_inventory()`. Run
+the complete example with:
+
+```bash
+MPLBACKEND=Agg python examples/basic_supply_chain.py
+```
+
+![Warehouse inventory over 30 days](docs/basic-inventory.png)
+
 ## Core Concepts
 
 | Concept | Description |
@@ -89,6 +114,9 @@ See the `examples/` directory for complete runnable scripts:
 ```bash
 pytest tests/ -v
 ```
+
+The test suite runs automatically on every push and pull request for Python
+3.10 through 3.13.
 
 ## License
 
