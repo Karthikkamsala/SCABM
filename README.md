@@ -1,6 +1,6 @@
 # supplychain-abm
 
-[![CI](https://github.com/Karthikkamsala/SC-ABM/actions/workflows/ci.yml/badge.svg)](https://github.com/Karthikkamsala/SC-ABM/actions/workflows/ci.yml)
+[![CI](https://github.com/Karthikkamsala/SCABM/actions/workflows/ci.yml/badge.svg)](https://github.com/Karthikkamsala/SCABM/actions/workflows/ci.yml)
 
 > A virtual laboratory for experimenting with supply-chain decisions, disruptions, and policies.
 
@@ -24,14 +24,14 @@
 The project is currently installed directly from GitHub:
 
 ```bash
-pip install git+https://github.com/Karthikkamsala/SC-ABM.git
+pip install git+https://github.com/Karthikkamsala/SCABM.git
 ```
 
 For development:
 
 ```bash
-git clone https://github.com/Karthikkamsala/SC-ABM.git
-cd SC-ABM
+git clone https://github.com/Karthikkamsala/SCABM.git
+cd SCABM
 pip install -e ".[dev]"
 ```
 
